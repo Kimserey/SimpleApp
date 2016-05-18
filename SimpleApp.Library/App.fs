@@ -1,4 +1,6 @@
 ﻿namespace SimpleApp.Library
 
+open Xamarin.Forms
+
 type App() = 
-    member this.X = "F#"
+    inherit Application(MainPage = new ContentPage(Content = new Label(Text = "Hello world!")))
